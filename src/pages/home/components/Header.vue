@@ -21,10 +21,11 @@ export default {
 </script>
 
 <style lang="stylus" scoped>
+$bgColor = #00bcd4
 .header {
   display: flex;
   line-height: 43px;
-  background: #00bcd4;
+  background: $bgColor;
   color: #fff;
 
   .header-left {
