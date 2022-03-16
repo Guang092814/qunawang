@@ -105,6 +105,7 @@ export default {
   overflow: hidden;
   height: 0;
   padding-bottom: 50%;
+  margin-top: 0.1rem; 
 
   .icon {
     position: relative;
@@ -119,9 +120,9 @@ export default {
       top: 0;
       left: 0;
       right: 0;
-      bottom: 22px;
+      bottom: .4rem;
       box-sizing: border-box;
-      padding: 5px;
+      padding: .1rem;
 
       .icon-img-content {
         display: block;
@@ -135,9 +136,9 @@ export default {
       left: 0;
       right: 0;
       bottom: 0;
-      height: 22px;
+      height: .4rem;
       text-align: center;
-      line-height: 22px;
+      line-height: .4rem;
       color: #333;
       overflow: hidden
       white-space: nowrap;

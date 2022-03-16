@@ -4,6 +4,8 @@ import App from './App.vue'
 import VueAwesomeSwiper from 'vue-awesome-swiper'
 import './assets/style/iconfont.css'
 import './assets/style/swiper.less'
+import './assets/style/border.css'
+import './assets/style/reset.css'
 
 Vue.config.productionTip = false
 Vue.use(VueAwesomeSwiper, /* { default options with global component } */)

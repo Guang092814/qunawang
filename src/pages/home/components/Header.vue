@@ -24,38 +24,38 @@ export default {
 $bgColor = #00bcd4
 .header {
   display: flex;
-  line-height: 43px;
+  line-height: 0.9rem;
   background: $bgColor;
   color: #fff;
 
   .header-left {
-    width: 32px;
+    width: 0.6rem;
     float: left;
     .back-icon{
       text-align: center
-      font-size: 20px
+      font-size: 0.4rem
     }
   }
 
   .header-input {
     flex: 1;
-    height: 32px;
-    line-height: 32px;
-    margin-top: 6px;
-    margin-left: 10px;
-    padding-left: 10px
+    height: 0.6rem;
+    line-height: .6rem;
+    margin-top: .1rem;
+    margin-left: .2rem;
+    padding-left: .2rem
     background: #fff;
-    border-radius: 5px;
+    border-radius: 0.1rem;
     color: #ccc;
   }
 
   .header-right {
-    width: 62px;
+    width: 1.2rem;
     float: right;
     text-align: center;
     .arrow-icon{
       margin-left: -2px 
-      font-size: 12px 
+      font-size: 0.2rem
     }
   }
 }
