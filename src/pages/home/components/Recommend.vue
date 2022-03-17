@@ -2,7 +2,7 @@
   <div>
     <div class="title">热销推荐</div>
     <ul>
-      <li class="item border-bottom" v-for="item of recommendList" :key="item.id">
+      <li class="item border-bottom" v-for="item of list" :key="item.id">
         <img
           class="item-img"
           :src="item.imgUrl"
@@ -21,30 +21,9 @@
 <script>
 export default {
   name: "HomeRecommend",
-  data(){
-      return{
-          recommendList:[{
-              id: '0001',
-              imgUrl:'https://imgs.qunarzz.com/sight/p0/2201/f7/f708779f6b807a41a3.water.jpg_330x267_fbcc068c.jpg',
-              title: '北京环球度假区',
-              desc: '果园环岛/通州区'
-      },
-      {
-              id: '0002',
-              imgUrl:'https://imgs.qunarzz.com/sight/p0/2201/f7/f708779f6b807a41a3.water.jpg_330x267_fbcc068c.jpg',
-              title: '北京环球度假区',
-              desc: '果园环岛/通州区'
-      },
-      {
-              id: '0003',
-              imgUrl:'https://imgs.qunarzz.com/sight/p0/2201/f7/f708779f6b807a41a3.water.jpg_330x267_fbcc068c.jpg',
-              title: '北京环球度假区',
-              desc: '果园环岛/通州区'
-      }
-      ]
-      }
-      
-  }
+  props:{
+    list:Array
+  },
 };
 </script>
 
