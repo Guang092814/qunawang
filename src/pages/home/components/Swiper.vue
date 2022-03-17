@@ -19,8 +19,8 @@ export default {
       swiperOptions: {
         loop:true
       },
-      img1,
-      img2,
+      // img1,
+      // img2,
       swiperList: [{
         id: '0001',
         imgUrl: img1
