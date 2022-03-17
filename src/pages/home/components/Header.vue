@@ -7,24 +7,27 @@
       <span class="iconfont">&#xe632;</span>
       输入城市/景点/游玩主题
     </div>
-    <div class="header-right">
-      {{this.city}}
-      <span class="iconfont arrow-icon">&#xeb6d;</span>
-    </div>
+    <router-link to="/city">
+      <div class="header-right">
+        {{ this.city }}
+        <span class="iconfont arrow-icon">&#xeb6d;</span>
+      </div>
+    </router-link>
   </div>
 </template>
 
 <script>
 export default {
   name: "HomeHeader",
-  props:{
-    city: String
-  }
+  props: {
+    city: String,
+  },
 };
 </script>
 
 <style lang="stylus" scoped>
-$bgColor = #00bcd4
+@import '@/assets/style/varibles.styl';
+
 .header {
   display: flex;
   line-height: 0.9rem;
@@ -34,19 +37,20 @@ $bgColor = #00bcd4
   .header-left {
     width: 0.6rem;
     float: left;
-    .back-icon{
-      text-align: center
-      font-size: 0.4rem
+
+    .back-icon {
+      text-align: center;
+      font-size: 0.4rem;
     }
   }
 
   .header-input {
     flex: 1;
     height: 0.6rem;
-    line-height: .6rem;
-    margin-top: .1rem;
-    margin-left: .2rem;
-    padding-left: .2rem
+    line-height: 0.6rem;
+    margin-top: 0.1rem;
+    margin-left: 0.2rem;
+    padding-left: 0.2rem;
     background: #fff;
     border-radius: 0.1rem;
     color: #ccc;
@@ -56,9 +60,11 @@ $bgColor = #00bcd4
     width: 1.2rem;
     float: right;
     text-align: center;
-    .arrow-icon{
-      margin-left: -2px 
-      font-size: 0.2rem
+    color: #fff
+
+    .arrow-icon {
+      margin-left: -2px;
+      font-size: 0.2rem;
     }
   }
 }
