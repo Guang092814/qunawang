@@ -63,6 +63,7 @@ export default {
     },
     handleTouchEnd() {
       this.touchStatus = false;
+      
     },
   },
 };
@@ -70,7 +71,6 @@ export default {
 
 <style lang="stylus" scoped>
 @import '@/assets/style/varibles.styl';
-
 .list {
   display: flex;
   flex-direction: column;
