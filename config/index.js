@@ -9,10 +9,10 @@ module.exports = {
 
     // Paths fiddler charles
     assetsSubDirectory: 'public',
-    assetsPublicPath: '/',
+    assetsPublicPath: '/project',
     proxyTable: {
       '/api': {
-        target: 'http://localhost:8080',
+        target: 'http://localhost:80',
         pathRewrite:{
           '^/api':'public/mock'
         }
