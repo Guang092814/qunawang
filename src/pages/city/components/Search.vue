@@ -27,7 +27,7 @@
 </template>
 
 <script>
-import {mapMutations} from 'vuex'
+import { mapMutations } from 'vuex'
 import Bscroll from "better-scroll";
 export default {
   name: "CitySearch",
