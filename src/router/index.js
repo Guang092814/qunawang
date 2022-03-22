@@ -20,7 +20,9 @@ export default new VueRouter({
         path: '/detail/:id',
         name: 'Detail',
         component: Detail
-    },
-
-]
+    }],
+    scrollBehavior(to, from, savedPosition) {
+        // 始终滚动到顶部
+        return { x:0 , y:0}
+      },
 })
