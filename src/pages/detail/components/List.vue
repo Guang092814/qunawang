@@ -38,7 +38,7 @@ export default {
   font-size: 0.32rem;
   padding: 0 0.2rem;
 }
-. item-chilren{
-    padding:0 .2rem
+.item-chilren{
+    padding:0 .2rem 
 }
 </style>
